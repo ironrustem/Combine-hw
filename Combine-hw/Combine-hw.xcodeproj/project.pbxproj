@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		57AE3A98273A890C005AC165 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3A97273A890C005AC165 /* AppDelegate.swift */; };
-		57AE3A9A273A890C005AC165 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3A99273A890C005AC165 /* SceneDelegate.swift */; };
 		57AE3A9C273A890C005AC165 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3A9B273A890C005AC165 /* ViewController.swift */; };
-		57AE3A9F273A890C005AC165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AE3A9D273A890C005AC165 /* Main.storyboard */; };
 		57AE3AA1273A890E005AC165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AE3AA0273A890E005AC165 /* Assets.xcassets */; };
 		57AE3AA4273A890E005AC165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AE3AA2273A890E005AC165 /* LaunchScreen.storyboard */; };
+		57AE3AB1273AAB1D005AC165 /* CatDogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3AB0273AAB1D005AC165 /* CatDogService.swift */; };
+		57AE3AB3273AAB98005AC165 /* CatFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3AB2273AAB98005AC165 /* CatFact.swift */; };
+		57AE3AB7273AABCF005AC165 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3AB6273AABCF005AC165 /* DogImage.swift */; };
+		57AE3ABA273AC64B005AC165 /* Combine+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AE3AB9273AC64B005AC165 /* Combine+UIKit.swift */; };
 		A361681C289A233AF753ACDA /* Pods_Combine_hw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F17D37F5AD32D659B5A9865F /* Pods_Combine_hw.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +23,14 @@
 		547E9ADE8178222F852CB314 /* Pods-Combine-hw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Combine-hw.release.xcconfig"; path = "Target Support Files/Pods-Combine-hw/Pods-Combine-hw.release.xcconfig"; sourceTree = "<group>"; };
 		57AE3A94273A890C005AC165 /* Combine-hw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine-hw.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AE3A97273A890C005AC165 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57AE3A99273A890C005AC165 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		57AE3A9B273A890C005AC165 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57AE3A9E273A890C005AC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57AE3AA0273A890E005AC165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AE3AA3273A890E005AC165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AE3AA5273A890E005AC165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AE3AB0273AAB1D005AC165 /* CatDogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDogService.swift; sourceTree = "<group>"; };
+		57AE3AB2273AAB98005AC165 /* CatFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFact.swift; sourceTree = "<group>"; };
+		57AE3AB6273AABCF005AC165 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		57AE3AB9273AC64B005AC165 /* Combine+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+UIKit.swift"; sourceTree = "<group>"; };
 		F17D37F5AD32D659B5A9865F /* Pods_Combine_hw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Combine_hw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,15 +67,49 @@
 		57AE3A96273A890C005AC165 /* Combine-hw */ = {
 			isa = PBXGroup;
 			children = (
+				57AE3AB8273AC63B005AC165 /* Extensions */,
+				57AE3AAF273AAB0C005AC165 /* Models */,
+				57AE3AAC273AA5A3005AC165 /* Services */,
+				57AE3AAB273A9858005AC165 /* Resources */,
 				57AE3A97273A890C005AC165 /* AppDelegate.swift */,
-				57AE3A99273A890C005AC165 /* SceneDelegate.swift */,
 				57AE3A9B273A890C005AC165 /* ViewController.swift */,
-				57AE3A9D273A890C005AC165 /* Main.storyboard */,
-				57AE3AA0273A890E005AC165 /* Assets.xcassets */,
 				57AE3AA2273A890E005AC165 /* LaunchScreen.storyboard */,
 				57AE3AA5273A890E005AC165 /* Info.plist */,
 			);
 			path = "Combine-hw";
+			sourceTree = "<group>";
+		};
+		57AE3AAB273A9858005AC165 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57AE3AA0273A890E005AC165 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		57AE3AAC273AA5A3005AC165 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				57AE3AB0273AAB1D005AC165 /* CatDogService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		57AE3AAF273AAB0C005AC165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57AE3AB2273AAB98005AC165 /* CatFact.swift */,
+				57AE3AB6273AABCF005AC165 /* DogImage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		57AE3AB8273AC63B005AC165 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				57AE3AB9273AC64B005AC165 /* Combine+UIKit.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B34C9280655E301210113F75 /* Frameworks */ = {
@@ -88,7 +126,6 @@
 				544F244ED32DFC5C3184A0B5 /* Pods-Combine-hw.debug.xcconfig */,
 				547E9ADE8178222F852CB314 /* Pods-Combine-hw.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,7 +191,6 @@
 			files = (
 				57AE3AA4273A890E005AC165 /* LaunchScreen.storyboard in Resources */,
 				57AE3AA1273A890E005AC165 /* Assets.xcassets in Resources */,
-				57AE3A9F273A890C005AC165 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,21 +245,16 @@
 			files = (
 				57AE3A9C273A890C005AC165 /* ViewController.swift in Sources */,
 				57AE3A98273A890C005AC165 /* AppDelegate.swift in Sources */,
-				57AE3A9A273A890C005AC165 /* SceneDelegate.swift in Sources */,
+				57AE3ABA273AC64B005AC165 /* Combine+UIKit.swift in Sources */,
+				57AE3AB3273AAB98005AC165 /* CatFact.swift in Sources */,
+				57AE3AB7273AABCF005AC165 /* DogImage.swift in Sources */,
+				57AE3AB1273AAB1D005AC165 /* CatDogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57AE3A9D273A890C005AC165 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57AE3A9E273A890C005AC165 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57AE3AA2273A890E005AC165 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +395,8 @@
 				INFOPLIST_FILE = "Combine-hw/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +425,8 @@
 				INFOPLIST_FILE = "Combine-hw/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
