@@ -7,5 +7,6 @@ target 'Combine-hw' do
 
   # Pods for Combine-hw
  pod 'SnapKit', '~> 5.0.0'
+ pod "SwiftGen"
 
 end
