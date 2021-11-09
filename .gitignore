@@ -88,3 +88,9 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Mac OS X Finder
+.DS_Store
+
+# Cocoapods
+Pods/
